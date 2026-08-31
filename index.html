@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estáis invitados a la boda de Ángel y Ash y al bautizo de nuestra pequeña Athenea. Celebrad con nosotros este día tan especial.">
+  <title>Boda de Ángel & Ash & Bautizo de Athenea</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== INTRO: SOBRE LACRADO ==================== -->
+  <div class="intro-overlay" id="intro-overlay" aria-label="Invitación interactiva">
+    <div class="intro-backdrop"></div>
+    <div class="envelope-scene" id="envelope-scene">
+      <div class="envelope-wrapper" id="envelope-wrapper">
+        <div class="envelope" id="envelope">
+          
+          <!-- Fondo interior del sobre -->
+          <div class="envelope-interior"></div>
+
+          <!-- Carta con texto en cascada -->
+          <div class="envelope-card" id="envelope-card">
+            <div class="card-border-decor"></div>
+            <div class="card-content">
+              <div class="card-icon-header">✦</div>
+              <p class="card-cascade-text card-line-1">Os invitan a su boda</p>
+              <h2 class="card-cascade-text card-line-2">Ashley <span class="card-amp">&</span> Ángel</h2>
+              <div class="card-cascade-text card-line-divider">
+                <span class="line-deco"></span>
+                <span class="line-icon">💍</span>
+                <span class="line-deco"></span>
+              </div>
+              <div class="card-cascade-text card-line-3">
+                <p class="card-date-primary">14 de Julio de 2027</p>
+                <p class="card-date-secondary">Miércoles · 12:00h</p>
+              </div>
+              <div class="card-cascade-text card-line-4">
+                <p class="card-location-primary">Iglesia de San Martín</p>
+                <p class="card-location-secondary">Celebración posterior en Finca El Olivar</p>
+              </div>
+              
+              <div class="card-cascade-text card-line-5">
+                <button class="btn-intro-rsvp" id="btn-intro-confirm">
+                  <span>Confirmar asistencia</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <button class="btn-intro-explore" id="btn-intro-skip">
+                  Ver detalles del evento
+                </button>
+              </div>
+              <div class="card-icon-footer">✦</div>
+            </div>
+          </div>
+
+          <!-- Solapas inferiores y laterales del sobre -->
+          <div class="envelope-pocket"></div>
+          <div class="envelope-flap-left"></div>
+          <div class="envelope-flap-right"></div>
+          <div class="envelope-flap-bottom"></div>
+
+          <!-- Solapa superior plegable 3D -->
+          <div class="envelope-flap-top" id="envelope-flap-top">
+            <div class="flap-top-triangle"></div>
+          </div>
+
+          <!-- Sello de lacre -->
+          <div class="wax-seal" id="wax-seal" role="button" aria-label="Sello de lacre. Toca para abrir">
+            <div class="wax-seal-body">
+              <div class="wax-edge-ring"></div>
+              <div class="wax-center">
+                <svg class="wax-svg-monogram" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,240,215,0.4)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                  <text x="50" y="55" text-anchor="middle" dominant-baseline="middle" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" fill="#fdedd6" letter-spacing="1">A & A</text>
+                </svg>
+              </div>
+            </div>
+            <div class="wax-shine"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Indicador inferior "Toca para abrir" -->
+      <div class="intro-hint" id="intro-hint">
+        <div class="hint-hand-pulse">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </div>
+        <p class="hint-label">Toca para abrir</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="#cuando">¿Cuándo?</a></li>
+        <li><a href="#donde">¿Dónde?</a></li>
+        <li><a href="#transporte">Transporte</a></li>
+        <li><a href="#vienes">¿Vienes?</a></li>
+        <li><a href="#album">Álbum</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#cuando">¿Cuándo?</a></li>
+        <li><a href="#donde">¿Dónde?</a></li>
+        <li><a href="#transporte">Transporte</a></li>
+        <li><a href="#vienes">¿Vienes?</a></li>
+        <li><a href="#album">Álbum</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <img src="img/hero.png" alt="Ángel, Ash y su hija Athenea" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-names">
+        Ángel
+        <span class="hero-ampersand">&</span>
+        Ash
+      </h1>
+      <p class="hero-subtitle">¡Nos casamos!</p>
+    </div>
+  </section>
+
+  <!-- ==================== BAUTIZO DE ATHENEA ==================== -->
+  <section class="baptism section-padding" id="bautizo">
+    <div class="container">
+      <div class="baptism-card reveal">
+        <div class="baptism-tag">Doble Celebración</div>
+        <h2 class="baptism-title">¡Y me bautizan!</h2>
+        <div class="baptism-divider">
+          <span class="divider-icon">✦</span>
+        </div>
+        
+        <div class="baptism-photo-wrapper">
+          <div class="baptism-photo-frame">
+            <img src="img/bautizo-olivia.jpg" alt="Athenea" class="baptism-photo">
+          </div>
+          <div class="baptism-badge">Athenea ✨</div>
+        </div>
+
+        <div class="godparents-card">
+          <p class="godparents-intro">Mis padrinos son:</p>
+          <div class="godparents-names">
+            <span class="godparent-badge">Carlos</span>
+            <span class="godparents-amp">&</span>
+            <span class="godparent-badge">Elena</span>
+          </div>
+        </div>
+
+        <p class="baptism-note">
+          ¡Será un día lleno de magia, risas y mucho amor compartido en familia!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INVITACIÓN ==================== -->
+  <section class="invitation section-padding" id="invitacion">
+    <div class="container">
+      <div class="reveal">
+        <div class="divider">
+          <span class="divider-icon">✦</span>
+        </div>
+        <p class="invitation-text">
+          Queridos amigos y familia,<br><br>
+          Después de años de camino juntos, de risas compartidas y de dar la bienvenida
+          a nuestra pequeña Athenea, hemos decidido celebrar nuestro amor y su bautizo
+          rodeándonos de las personas que más queremos.<br><br>
+          Nos encantaría que nos acompañarais en este día tan especial.
+          Vuestra presencia será el mejor regalo.
+        </p>
+        <p class="invitation-signature">Ángel, Ash & Athenea</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ¿CUÁNDO? ==================== -->
+  <section class="when section-padding" id="cuando">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">¿Cuándo?</h2>
+        <div class="when-date">
+          <div class="when-day">14</div>
+          <div class="when-month-year">Julio · 2027</div>
+          <div class="when-weekday">Miércoles · 12:00h</div>
+        </div>
+
+        <!-- Cuenta atrás integrada -->
+        <div class="countdown-container" id="countdown-cuando">
+          <div class="countdown-timer">
+            <div class="countdown-box">
+              <span class="countdown-num" data-countdown-days>316</span>
+              <span class="countdown-label">Días</span>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" data-countdown-hours>15</span>
+              <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" data-countdown-minutes>50</span>
+              <span class="countdown-label">Min</span>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-box">
+              <span class="countdown-num" data-countdown-seconds>00</span>
+              <span class="countdown-label">Seg</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-calendar" id="btn-add-calendar">
+          <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+          Añadir al calendario
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ¿DÓNDE? ==================== -->
+  <section class="where section-padding" id="donde">
+    <div class="container">
+      <h2 class="section-title reveal">¿Dónde?</h2>
+
+      <!-- Ceremonia -->
+      <div class="subsection reveal">
+        <h3 class="subsection-title">Ceremonia & Bautizo</h3>
+        <p class="subsection-description">
+          La ceremonia y el bautizo tendrán lugar en la Iglesia de San Martín, un templo con siglos de historia
+          en el corazón del pueblo, rodeado de jardines y olivos centenarios.
+        </p>
+        <div class="carousel" id="carousel-ceremonia" data-carousel>
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="img/ceremonia-1.png" alt="Interior de la iglesia"></div>
+            <div class="carousel-slide"><img src="img/ceremonia-2.png" alt="Exterior de la iglesia"></div>
+            <div class="carousel-slide"><img src="img/ceremonia-3.png" alt="Detalles de la decoración"></div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+          <button class="carousel-btn next" aria-label="Siguiente">›</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="text-center" style="margin-top: var(--space-md);">
+          <a href="https://maps.google.com/?q=Iglesia+de+San+Martín" target="_blank" rel="noopener" class="btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            Ver en Google Maps
+          </a>
+        </div>
+      </div>
+
+      <div class="divider"><span class="divider-icon">✦</span></div>
+
+      <!-- Convite -->
+      <div class="subsection reveal">
+        <h3 class="subsection-title">Convite</h3>
+        <p class="subsection-description">
+          Después de la ceremonia, continuaremos la celebración en la Finca El Olivar,
+          un espacio único con terrazas, jardines y vistas a la sierra.
+          Nos espera una tarde inolvidable.
+        </p>
+        <div class="carousel" id="carousel-convite" data-carousel>
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="img/convite-1.png" alt="Salón del convite"></div>
+            <div class="carousel-slide"><img src="img/convite-2.png" alt="Exterior de la finca"></div>
+            <div class="carousel-slide"><img src="img/convite-3.png" alt="Detalle gastronómico"></div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+          <button class="carousel-btn next" aria-label="Siguiente">›</button>
+          <div class="carousel-dots"></div>
+        </div>
+        <div class="text-center" style="margin-top: var(--space-md);">
+          <a href="https://maps.google.com/?q=Finca+El+Olivar" target="_blank" rel="noopener" class="btn-maps">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+            Ver en Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRANSPORTE Y ALOJAMIENTO ==================== -->
+  <section class="transport section-padding" id="transporte">
+    <div class="container">
+      <h2 class="section-title reveal">Transporte y Alojamiento</h2>
+
+      <div class="transport-grid">
+        <!-- Transporte -->
+        <div class="transport-card reveal" id="transporte-card">
+          <div class="transport-card-icon">🚆</div>
+          <h3>Cómo llegar</h3>
+          <p>Estas son las mejores opciones de transporte público para llegar:</p>
+          <ul>
+            <li><strong>Cercanías:</strong> Línea C-3 hasta la estación de El Pueblo (30 min desde Atocha)</li>
+            <li><strong>Autobús:</strong> Línea 491 desde Moncloa (45 min, cada 20 min)</li>
+            <li><strong>En coche:</strong> Salida 42 de la A-6, luego M-505 dirección norte</li>
+          </ul>
+          <div style="margin-top: var(--space-md);">
+            <p style="font-size: 0.9rem; color: var(--color-text-light);">
+              ¿Buscas compartir coche? Únete al grupo de WhatsApp para coordinarte con otros invitados:
+            </p>
+            <a href="https://chat.whatsapp.com/EXAMPLE" target="_blank" rel="noopener" class="btn-whatsapp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.634-1.215A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.569-5.944-1.564l-.427-.253-2.747.72.733-2.677-.278-.442A9.78 9.78 0 012.182 12 9.818 9.818 0 0112 2.182 9.818 9.818 0 0121.818 12 9.818 9.818 0 0112 21.818z"/></svg>
+              Grupo de WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Alojamiento -->
+        <div class="transport-card reveal" id="alojamiento">
+          <div class="transport-card-icon">🏨</div>
+          <h3>Dónde dormir</h3>
+          <p>Si necesitáis alojamiento, os recomendamos:</p>
+          <ul>
+            <li><strong>Hotel Rural El Rincón:</strong> A 5 min de la finca. Habitaciones desde 65€/noche. Tel: 91 XXX XX XX</li>
+            <li><strong>Casa Rural Los Olivos:</strong> Para grupos de hasta 8 personas. Desde 150€/noche</li>
+            <li><strong>Hotel Villa del Pueblo:</strong> En el centro del pueblo. Desde 55€/noche</li>
+          </ul>
+          <p style="margin-top: var(--space-sm); font-size: 0.88rem; color: var(--color-text-muted); font-style: italic;">
+            Mencionad que venís a la boda de Ángel y Ash para obtener un descuento especial.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ¿VIENES? (RSVP) ==================== -->
+  <section class="rsvp section-padding" id="vienes">
+    <div class="container">
+      <h2 class="section-title reveal">¿Vienes?</h2>
+      <p class="subsection-description reveal" style="margin-bottom: 0;">
+        Confirma tu asistencia antes del 15 de mayo de 2027 para que podamos preparar todo con cariño.
+      </p>
+
+      <div class="rsvp-form reveal" id="rsvp-form-container">
+        <!-- Formulario -->
+        <form id="rsvp-form">
+          <div class="form-group">
+            <label for="rsvp-name">Tu nombre completo</label>
+            <input type="text" id="rsvp-name" class="form-input" placeholder="Nombre y apellidos" required>
+          </div>
+
+          <div class="form-group">
+            <label>¿Asistirás a la ceremonia?</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="ceremonia" id="ceremonia-si" value="si" required>
+                <label for="ceremonia-si">Sí, allí estaré</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="ceremonia" id="ceremonia-no" value="no">
+                <label for="ceremonia-no">No puedo ir</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>¿Asistirás al convite?</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="convite" id="convite-si" value="si" required>
+                <label for="convite-si">Sí, ¡por supuesto!</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="convite" id="convite-no" value="no">
+                <label for="convite-no">No puedo ir</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>¿Vienes acompañado/a?</label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" name="acompanante" id="acompanante-si" value="si" required>
+                <label for="acompanante-si">Vengo con alguien</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" name="acompanante" id="acompanante-no" value="no">
+                <label for="acompanante-no">Vengo solo/a</label>
+              </div>
+            </div>
+
+            <!-- Contenedor dinámico de acompañantes (aparece al marcar 'Vengo con alguien') -->
+            <div class="companion-container" id="companion-container" style="display: none;">
+              <div class="companions-list" id="companions-list">
+                <!-- Se añaden filas dinámicamente al pulsar el botón de abajo -->
+              </div>
+
+              <button type="button" class="btn-add-companion" id="btn-add-companion">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                + Añadir acompañante
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="rsvp-notes">¿Alguna duda o detalle a tener en cuenta?</label>
+            <span class="hint">Alergias, intolerancias, menú infantil, trona para bebés, canciones favoritas...</span>
+            <textarea id="rsvp-notes" class="form-textarea" placeholder="Escribe aquí lo que necesites..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="btn-rsvp-submit">Confirmar asistencia</button>
+        </form>
+
+        <!-- Success message -->
+        <div class="form-success" id="form-success">
+          <h3>¡Muchas Gracias!</h3>
+          <p>Hemos recibido tu confirmación. ¡Estamos deseando celebrar este día contigo!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REGALOS: NÚMERO DE CUENTA ==================== -->
+  <section class="gifts-account section-padding" id="regalos">
+    <div class="container">
+      <div class="gifts-account-card reveal">
+        <div class="gifts-icon">🎁</div>
+        <h2 class="section-title" style="margin-bottom: var(--space-sm);">Regalos</h2>
+        
+        <p class="gifts-account-message">
+          El mejor regalo es que estéis con nosotros en nuestro día, pero si queréis hacernos un obsequio...<br>
+          <span class="gifts-cta-phrase">
+            ¡<button class="btn-account-toggle" id="btn-account-toggle" type="button" aria-expanded="false">Aquí</button> está nuestro número de cuenta!
+          </span>
+        </p>
+
+        <!-- Tarjeta desplegable con número de cuenta (oculta por defecto) -->
+        <div class="account-details-card" id="account-details-card">
+          <div class="account-card-inner" id="account-card-content">
+            <div class="account-badge">Transferencia Bancaria</div>
+            <div class="iban-display-group">
+              <span class="iban-label">Número de cuenta (IBAN):</span>
+              <div class="iban-number" id="iban-text">ES12 3456 7890 1234 5678 9012</div>
+            </div>
+            
+            <div class="account-meta-grid">
+              <div class="meta-item">
+                <span class="meta-label">Titulares:</span>
+                <span class="meta-val">Ángel & Ashley</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Concepto sugerido:</span>
+                <span class="meta-val">Boda + Tu Nombre</span>
+              </div>
+            </div>
+
+            <button class="btn-copy-iban" id="btn-copy-iban" type="button">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copiar IBAN
+            </button>
+          </div>
+        </div>
+
+        <!-- Toast de copiado -->
+        <div class="copy-toast" id="copy-toast">
+          ✓ ¡Número de cuenta copiado al portapapeles!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ÁLBUM DE FOTOS (QR) ==================== -->
+  <section class="wedding-album section-padding" id="album">
+    <div class="container">
+      <div class="album-card reveal">
+        <div class="album-tag">Recuerdos Inolvidables</div>
+        <h2 class="section-title">Álbum de Fotos</h2>
+        <p class="album-intro">
+          ¡Queremos ver la boda y el bautizo a través de vuestros ojos! Escanead este código QR o pulsad el botón para subir todas las fotos y vídeos que hagáis durante la celebración.
+        </p>
+
+        <div class="qr-container">
+          <div class="qr-frame">
+            <!-- QR Code estilizado SVG -->
+            <svg class="qr-code-svg" viewBox="0 0 200 200" width="180" height="180">
+              <rect width="200" height="200" fill="#FFFFFF" rx="12"/>
+              <!-- Marker Top Left -->
+              <rect x="20" y="20" width="50" height="50" fill="#3A3226" rx="6"/>
+              <rect x="28" y="28" width="34" height="34" fill="#FFFFFF" rx="4"/>
+              <rect x="36" y="36" width="18" height="18" fill="#B08968" rx="2"/>
+              <!-- Marker Top Right -->
+              <rect x="130" y="20" width="50" height="50" fill="#3A3226" rx="6"/>
+              <rect x="138" y="28" width="34" height="34" fill="#FFFFFF" rx="4"/>
+              <rect x="146" y="36" width="18" height="18" fill="#B08968" rx="2"/>
+              <!-- Marker Bottom Left -->
+              <rect x="20" y="130" width="50" height="50" fill="#3A3226" rx="6"/>
+              <rect x="28" y="138" width="34" height="34" fill="#FFFFFF" rx="4"/>
+              <rect x="36" y="146" width="18" height="18" fill="#B08968" rx="2"/>
+              <!-- Decorative Pattern Modules -->
+              <rect x="80" y="24" width="12" height="12" fill="#3A3226" rx="2"/>
+              <rect x="100" y="24" width="12" height="12" fill="#8C6B4A" rx="2"/>
+              <rect x="80" y="44" width="20" height="10" fill="#3A3226" rx="2"/>
+              <rect x="106" y="40" width="10" height="24" fill="#B08968" rx="2"/>
+              <rect x="24" y="80" width="24" height="10" fill="#3A3226" rx="2"/>
+              <rect x="56" y="80" width="12" height="12" fill="#8C6B4A" rx="2"/>
+              <rect x="76" y="74" width="14" height="24" fill="#3A3226" rx="2"/>
+              <rect x="98" y="78" width="24" height="12" fill="#B08968" rx="2"/>
+              <rect x="130" y="80" width="16" height="10" fill="#3A3226" rx="2"/>
+              <rect x="154" y="74" width="22" height="14" fill="#8C6B4A" rx="2"/>
+              <rect x="80" y="106" width="12" height="20" fill="#3A3226" rx="2"/>
+              <rect x="100" y="100" width="20" height="12" fill="#8C6B4A" rx="2"/>
+              <rect x="128" y="100" width="14" height="14" fill="#3A3226" rx="2"/>
+              <rect x="150" y="96" width="26" height="12" fill="#B08968" rx="2"/>
+              <rect x="80" y="136" width="14" height="14" fill="#3A3226" rx="2"/>
+              <rect x="102" y="140" width="22" height="12" fill="#8C6B4A" rx="2"/>
+              <rect x="132" y="124" width="12" height="24" fill="#3A3226" rx="2"/>
+              <rect x="152" y="118" width="24" height="14" fill="#3A3226" rx="2"/>
+              <rect x="80" y="160" width="24" height="16" fill="#B08968" rx="2"/>
+              <rect x="112" y="164" width="16" height="12" fill="#3A3226" rx="2"/>
+              <rect x="136" y="156" width="16" height="20" fill="#8C6B4A" rx="2"/>
+              <rect x="160" y="160" width="16" height="16" fill="#3A3226" rx="2"/>
+              <!-- Center camera icon -->
+              <circle cx="100" cy="100" r="16" fill="#FAF7F2" stroke="#B08968" stroke-width="2"/>
+              <text x="100" y="104" text-anchor="middle" font-size="14">📷</text>
+            </svg>
+          </div>
+
+          <a href="https://photos.google.com" target="_blank" rel="noopener" class="btn-album-upload">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            Subir fotos al álbum
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NOS VEMOS EN... (CUENTA ATRÁS FINAL) ==================== -->
+  <section class="see-you section-padding" id="cuenta-atras">
+    <div class="container">
+      <div class="see-you-card reveal">
+        <div class="see-you-ornament">✦</div>
+        <h2 class="see-you-title">Nos vemos en...</h2>
+        
+        <div class="countdown-timer countdown-large">
+          <div class="countdown-box">
+            <span class="countdown-num" data-countdown-days>316</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <span class="countdown-num" data-countdown-hours>15</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <span class="countdown-num" data-countdown-minutes>50</span>
+            <span class="countdown-label">Minutos</span>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-box">
+            <span class="countdown-num" data-countdown-seconds>00</span>
+            <span class="countdown-label">Segundos</span>
+          </div>
+        </div>
+
+        <p class="see-you-sub">¡Estamos deseando compartir este día tan especial con todos vosotros!</p>
+        <p class="see-you-signature">Ángel, Ashley & Athenea</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-heart">♥</div>
+    <p class="footer-text">Ángel & Ash · Bautizo de Athenea · 14 de julio de 2027</p>
+  </footer>
+
+  <!-- Scripts con cache-busting -->
+  <script src="js/intro.js?v=20270714"></script>
+  <script src="js/carousel.js?v=20270714"></script>
+  <script src="js/calendar.js?v=20270714"></script>
+  <script src="js/rsvp.js?v=20270714"></script>
+  <script src="js/main.js?v=20270714"></script>
+</body>
+</html>
