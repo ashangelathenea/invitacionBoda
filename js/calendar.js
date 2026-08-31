@@ -9,7 +9,7 @@
 
   // ====== CONFIGURAR ESTOS DATOS ======
   const EVENT = {
-    title: 'Boda de Ángel & Ash y Bautizo de Athenea',
+    title: 'Boda de Ángel & Ashley y Bautizo de Athenea',
     // Formato: YYYYMMDDTHHMMSS (hora local)
     startDate: '20270714T120000',
     endDate: '20270715T020000',
