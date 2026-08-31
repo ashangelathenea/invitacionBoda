@@ -21,3 +21,10 @@ Documento de referencia con todos los identificadores, endpoints y configuracion
 - **Archivo local conectado:** [js/rsvp.js](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/js/rsvp.js)
 - **Código del script:** [apps-script/rsvp-api.gs](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/apps-script/rsvp-api.gs)
 - **Estado de conexión:** ✅ Probado y funcionando correctamente con inserción en tiempo real en la hoja de cálculo.
+
+---
+
+## 3. Álbum de Fotos Compartido (Google Fotos)
+- **Enlace del Álbum:** `https://photos.app.goo.gl/3j4eYtNKU449gyHVA`
+- **Código QR:** Generado y guardado en [img/qr-album.png](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/img/qr-album.png) (escaneable directamente con cualquier móvil hacia el álbum).
+- **Botón de subida:** Vinculado en [index.html](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/index.html).
