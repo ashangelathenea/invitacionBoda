@@ -1,31 +1,10 @@
 /**
  * Google Apps Script — Guardar respuestas de RSVP en Google Sheets
  *
- * GUÍA DE CONFIGURACIÓN RÁPIDA:
- *
- * 1. Ve a https://sheets.google.com y crea una nueva hoja de cálculo.
- * 2. Nómbrala por ejemplo: "Respuestas Boda Ángel & Ash".
- * 3. En la fila 1 (cabeceras), escribe en las columnas:
- *    - A1: Fecha de Envío
- *    - B1: Nombre Completo
- *    - C1: Asiste a Ceremonia
- *    - D1: Asiste a Convite
- *    - E1: ¿Viene Acompañado?
- *    - F1: Lista de Acompañantes
- *    - G1: Total Asistentes (Titular + Acomp.)
- *    - H1: Notas / Alergias / Canciones
- *
- * 4. En el menú superior de la hoja, ve a: Extensiones → Apps Script.
- * 5. Borra todo el código que aparezca y pega este código completo.
- * 6. Haz clic en "Implementar" (botón azul arriba a la derecha) → "Nueva implementación".
- * 7. En el icono de engranaje (⚙️), selecciona tipo: "Aplicación web".
- * 8. Configura:
- *    - Descripción: "RSVP Boda"
- *    - Ejecutar como: "Yo" (tu correo de Google)
- *    - Quién tiene acceso: "Cualquier persona" (Anyone)  <-- ¡MUY IMPORTANTE!
- * 9. Haz clic en "Implementar", autoriza los permisos de Google.
- * 10. Copia la "URL de la aplicación web" generada (termina en /exec).
- * 11. Pégala en el archivo `js/rsvp.js` en la variable `RSVP_ENDPOINT_URL`.
+ * DATOS DE IMPLEMENTACIÓN ACTIVA:
+ * - Deployment ID: AKfycbzoHJdTmPo_4Z29ZJihZKupfFR41C5L7Or5LuUt8CYb4r25P8TvJpheyyLQjTdvrOBX
+ * - Web App URL: https://script.google.com/macros/s/AKfycbzoHJdTmPo_4Z29ZJihZKupfFR41C5L7Or5LuUt8CYb4r25P8TvJpheyyLQjTdvrOBX/exec
+ * - Cuenta: ash.angel.athenea@gmail.com
  */
 
 function doPost(e) {

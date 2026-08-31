@@ -145,7 +145,7 @@
       console.log('RSVP Enviado:', payload);
 
       // Enviar a Google Sheets si hay endpoint configurado
-      const RSVP_ENDPOINT_URL = ''; // Pega aquí la URL de tu Google Apps Script (/exec)
+      const RSVP_ENDPOINT_URL = 'https://script.google.com/macros/s/AKfycbzoHJdTmPo_4Z29ZJihZKupfFR41C5L7Or5LuUt8CYb4r25P8TvJpheyyLQjTdvrOBX/exec';
       if (RSVP_ENDPOINT_URL) {
         fetch(RSVP_ENDPOINT_URL, {
           method: 'POST',
