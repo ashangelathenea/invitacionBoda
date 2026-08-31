@@ -25,6 +25,6 @@ Documento de referencia con todos los identificadores, endpoints y configuracion
 ---
 
 ## 3. Álbum de Fotos Compartido (Google Fotos)
-- **Enlace del Álbum:** `https://photos.app.goo.gl/3j4eYtNKU449gyHVA`
+- **Enlace del Álbum:** `https://photos.app.goo.gl/UoZpBJ2KF3iMXCdY8`
 - **Código QR:** Generado y guardado en [img/qr-album.png](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/img/qr-album.png) (escaneable directamente con cualquier móvil hacia el álbum).
 - **Botón de subida:** Vinculado en [index.html](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/index.html).
