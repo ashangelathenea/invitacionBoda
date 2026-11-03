@@ -113,9 +113,9 @@
       });
     });
 
-    /* ---- CUENTA ATRÁS VIVA AL 14/07/2027 ---- */
-    // Mes 6 = Julio (0-indexed en JavaScript: 0=Enero ... 6=Julio)
-    const targetDate = new Date(2027, 6, 14, 12, 0, 0).getTime();
+    /* ---- CUENTA ATRÁS VIVA AL 26/06/2027 17:00 ---- */
+    // Mes 5 = Junio (0-indexed en JavaScript: 0=Enero ... 5=Junio)
+    const targetDate = new Date(2027, 5, 26, 17, 0, 0).getTime();
 
     function updateCountdown() {
       const now = Date.now();

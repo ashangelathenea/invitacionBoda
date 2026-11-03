@@ -28,3 +28,15 @@ Documento de referencia con todos los identificadores, endpoints y configuracion
 - **Enlace del Álbum:** `https://photos.app.goo.gl/UoZpBJ2KF3iMXCdY8`
 - **Código QR:** Generado y guardado en [img/qr-album.png](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/img/qr-album.png) (escaneable directamente con cualquier móvil hacia el álbum).
 - **Botón de subida:** Vinculado en [index.html](file:///c:/Users/Jesús%20Garay/Desktop/Regalo%20AngelAsh/index.html).
+
+---
+
+## 4. Datos del Evento (Boda & Bautizo)
+- **Fecha:** Sábado, 26 de junio de 2027
+- **Ceremonia & Bautizo:** 17:00h
+  - **Lugar:** Parroquia Nuestra Señora del Pilar (Valdemoro, Madrid)
+  - **Ubicación Google Maps:** `https://share.google/7Io54lwIkXP9YSNzD`
+- **Convite & Fiesta:** 20:00h
+  - **Lugar:** Hotel PCM Forum Alcalá (Alcalá de Henares, Madrid)
+  - **Ubicación Google Maps:** `https://share.google/uXlopNADPag7lx0Wd`
+- **Alojamiento:** Hotel PCM Forum Alcalá (reserva telefónica indicando la boda de Ángel y Ashley).

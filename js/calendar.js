@@ -11,11 +11,11 @@
   const EVENT = {
     title: 'Boda de Ángel & Ashley y Bautizo de Athenea',
     // Formato: YYYYMMDDTHHMMSS (hora local)
-    startDate: '20270714T120000',
-    endDate: '20270715T020000',
-    location: 'Iglesia de San Martín, Madrid, España',
+    startDate: '20270626T170000',
+    endDate: '20270627T040000',
+    location: 'Parroquia Nuestra Señora del Pilar (Valdemoro) / Hotel PCM Forum Alcalá (Alcalá de Henares)',
     description:
-      '¡Nos casamos y bautizamos a Athenea! Ceremonia a las 12:00h en la Iglesia de San Martín, seguida del convite en la Finca El Olivar.',
+      '¡Nos casamos y bautizamos a Athenea! Ceremonia y bautizo a las 17:00h en la Parroquia Nuestra Señora del Pilar (Valdemoro), seguida de la celebración y convite a las 20:00h en el Hotel PCM Forum Alcalá.',
   };
   // ====================================
 
