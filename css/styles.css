@@ -330,7 +330,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 20%;
 }
 
 .hero-overlay {
@@ -339,47 +339,56 @@ button {
   background: linear-gradient(
     to bottom,
     rgba(250, 247, 242, 0) 0%,
-    rgba(250, 247, 242, 0) 60%,
-    rgba(250, 247, 242, 0.6) 82%,
-    rgba(250, 247, 242, 0.96) 96%,
+    rgba(250, 247, 242, 0) 70%,
+    rgba(250, 247, 242, 0.45) 86%,
+    rgba(250, 247, 242, 0.95) 97%,
     rgba(250, 247, 242, 1) 100%
   );
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-bottom: clamp(1.2rem, 3.5vw, 2.5rem);
+  padding-bottom: clamp(1rem, 2.8vw, 2.2rem);
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .hero-names {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
   font-weight: 300;
   color: var(--color-text);
-  letter-spacing: 0.05em;
-  line-height: 1.2;
-  text-shadow: 0 2px 12px rgba(255, 255, 255, 0.85), 0 1px 4px rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.04em;
+  line-height: 1.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25em 0.4em;
+  text-shadow: 0 2px 14px rgba(255, 255, 255, 0.95), 0 1px 4px rgba(255, 255, 255, 0.9);
 }
 
 .hero-ampersand {
-  display: block;
-  font-size: 0.6em;
+  display: inline-block;
+  font-size: 0.8em;
   color: var(--color-accent);
-  margin: 0.1em 0;
   font-style: italic;
+  margin: 0;
 }
 
 .hero-subtitle {
   font-family: var(--font-sans);
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--color-text-muted);
-  margin-top: var(--space-sm);
-  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.9);
+  margin-top: 0.4rem;
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
 }
 
 /* ============================================

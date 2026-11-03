@@ -31,7 +31,13 @@ Documento de referencia con todos los identificadores, endpoints y configuracion
 
 ---
 
-## 4. Datos del Evento (Boda & Bautizo)
+## 4. Grupo de WhatsApp para Invitados
+- **Enlace de Invitación:** `https://chat.whatsapp.com/KyrGmT9giW8HFkaTNuFU4k`
+- **Ubicación en la web:** Tarjeta dedicada junto a *Dónde dormir* en la sección de Transporte y Alojamiento.
+
+---
+
+## 5. Datos del Evento (Boda & Bautizo)
 - **Fecha:** Sábado, 26 de junio de 2027
 - **Padrinos de Athenea:** Denzel & Paula
 - **Ceremonia & Bautizo:** 17:00h

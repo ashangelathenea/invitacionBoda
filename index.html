@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Estáis invitados a la boda de Ángel y Ashley y al bautizo de nuestra pequeña Athenea. Celebrad con nosotros este día tan especial.">
   <title>Boda de Ángel & Ashley & Bautizo de Athenea</title>
-  <link rel="stylesheet" href="css/styles.css?v=20270626b">
+  <link rel="stylesheet" href="css/styles.css?v=20270626c">
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
 </head>
@@ -128,9 +128,9 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="hero-names">
-        Ángel
+        <span>Ángel</span>
         <span class="hero-ampersand">&</span>
-        Ashley
+        <span>Ashley</span>
       </h1>
       <p class="hero-subtitle">¡Nos casamos!</p>
     </div>
@@ -246,9 +246,9 @@
         </p>
         <div class="carousel" id="carousel-ceremonia" data-carousel>
           <div class="carousel-track">
-            <div class="carousel-slide"><img src="img/ceremonia-1.png" alt="Interior del templo con la corona mistérica y el altar"></div>
-            <div class="carousel-slide"><img src="img/ceremonia-2.png" alt="Exterior de la parroquia y torre campanario"></div>
-            <div class="carousel-slide"><img src="img/ceremonia-3.png" alt="Pila bautismal octogonal por inmersión de mármol y oro"></div>
+            <div class="carousel-slide"><img src="img/ceremonia-1.png" alt="Exterior de la parroquia y torre campanario"></div>
+            <div class="carousel-slide"><img src="img/ceremonia-2.png" alt="Interior del templo con la corona mistérica y el altar"></div>
+            <div class="carousel-slide"><img src="img/ceremonia-3.png" alt="Detalle de la pila bautismal octogonal por inmersión"></div>
           </div>
           <button class="carousel-btn prev" aria-label="Anterior">‹</button>
           <button class="carousel-btn next" aria-label="Siguiente">›</button>
@@ -272,9 +272,10 @@
         </p>
         <div class="carousel" id="carousel-convite" data-carousel>
           <div class="carousel-track">
-            <div class="carousel-slide"><img src="img/convite-1.png" alt="Fachada exterior del Hotel PCM Forum Alcalá"></div>
-            <div class="carousel-slide"><img src="img/convite-2.png" alt="Gran salón lounge y espacios de celebración"></div>
-            <div class="carousel-slide"><img src="img/convite-3.png" alt="Entrada principal y accesos del hotel"></div>
+            <div class="carousel-slide"><img src="img/convite-1.png" alt="Exterior del Hotel PCM Forum Alcalá"></div>
+            <div class="carousel-slide"><img src="img/convite-2.png" alt="Detalle de la entrada principal"></div>
+            <div class="carousel-slide"><img src="img/convite-3.png" alt="Gran salón de eventos y lounge"></div>
+            <div class="carousel-slide"><img src="img/convite-4.png" alt="Mesas y recepción"></div>
           </div>
           <button class="carousel-btn prev" aria-label="Anterior">‹</button>
           <button class="carousel-btn next" aria-label="Siguiente">›</button>
@@ -329,28 +330,43 @@
           </div>
         </div>
 
-        <!-- Alojamiento -->
-        <div class="transport-card reveal" id="alojamiento">
-          <div class="transport-card-icon">🏨</div>
-          <h3>Dónde dormir</h3>
-          <p>Para mayor comodidad, podéis alojaros directamente en el mismo hotel donde tendrá lugar el convite y la fiesta:</p>
-          <ul>
-            <li><strong>Hotel PCM Forum Alcalá (4★):</strong> Moderno hotel de 4 estrellas con habitaciones confortables, restaurante y parking para disfrutar de la fiesta sin preocuparos por el viaje de vuelta.</li>
-          </ul>
-          <div style="margin-top: var(--space-md); padding: var(--space-sm) var(--space-md); background: rgba(176, 137, 104, 0.08); border-radius: 8px; border-left: 3px solid var(--color-accent); text-align: left;">
-            <p style="font-size: 0.9rem; color: var(--color-text); margin: 0;">
-              <strong>Reserva de habitaciones:</strong> Podéis llamar directamente al hotel al <a href="tel:+34912918500" style="color: var(--color-accent-dark); font-weight: 600; text-decoration: underline;">91 291 85 00</a> e indicar que venís a la <strong>boda de Ángel y Ashley</strong>.
+        <!-- Columna derecha: Alojamiento y Grupo de WhatsApp -->
+        <div class="transport-side-col" style="display: flex; flex-direction: column; gap: var(--space-md);">
+          <!-- Alojamiento -->
+          <div class="transport-card reveal" id="alojamiento">
+            <div class="transport-card-icon">🏨</div>
+            <h3>Dónde dormir</h3>
+            <p>Para mayor comodidad, podéis alojaros directamente en el mismo hotel donde tendrá lugar el convite y la fiesta:</p>
+            <ul>
+              <li><strong>Hotel PCM Forum Alcalá (4★):</strong> Moderno hotel de 4 estrellas con habitaciones confortables, restaurante y parking para disfrutar de la fiesta sin preocuparos por el viaje de vuelta.</li>
+            </ul>
+            <div style="margin-top: var(--space-md); padding: var(--space-sm) var(--space-md); background: rgba(176, 137, 104, 0.08); border-radius: 8px; border-left: 3px solid var(--color-accent); text-align: left;">
+              <p style="font-size: 0.9rem; color: var(--color-text); margin: 0;">
+                <strong>Reserva de habitaciones:</strong> Podéis llamar directamente al hotel al <a href="tel:+34912918500" style="color: var(--color-accent-dark); font-weight: 600; text-decoration: underline;">91 291 85 00</a> e indicar que venís a la <strong>boda de Ángel y Ashley</strong>.
+              </p>
+            </div>
+            <p style="margin-top: var(--space-sm); font-size: 0.85rem; text-align: center;">
+              <a href="https://www.pcmforumalcala.com/el-hotel.html" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: underline;">
+                Visitar web oficial del hotel ↗
+              </a>
             </p>
           </div>
-          <p style="margin-top: var(--space-sm); font-size: 0.85rem; text-align: center;">
-            <a href="https://www.pcmforumalcala.com/el-hotel.html" target="_blank" rel="noopener" style="color: var(--color-accent); text-decoration: underline;">
-              Visitar web oficial del hotel ↗
-            </a>
-          </p>
+
+          <!-- Grupo de WhatsApp -->
+          <div class="transport-card reveal" id="whatsapp-card" style="text-align: center;">
+            <div class="transport-card-icon">💬</div>
+            <h3>Grupo de WhatsApp</h3>
+            <p style="font-size: 0.92rem; color: var(--color-text); margin-top: 0.35rem;">
+              Si queréis organizaros para acompañaros en los viajes o en el hotel aquí tenéis este grupo
+            </p>
+            <div style="margin-top: var(--space-sm);">
+              <a href="https://chat.whatsapp.com/KyrGmT9giW8HFkaTNuFU4k" target="_blank" rel="noopener" class="btn-whatsapp">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.634-1.215A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.569-5.944-1.564l-.427-.253-2.747.72.733-2.677-.278-.442A9.78 9.78 0 012.182 12 9.818 9.818 0 0112 2.182 9.818 9.818 0 0121.818 12 9.818 9.818 0 0112 21.818z"/></svg>
+                Unirse al grupo de WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
       </div>
     </div>
   </section>
