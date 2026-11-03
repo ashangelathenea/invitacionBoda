@@ -33,10 +33,13 @@ Documento de referencia con todos los identificadores, endpoints y configuracion
 
 ## 4. Datos del Evento (Boda & Bautizo)
 - **Fecha:** Sábado, 26 de junio de 2027
+- **Padrinos de Athenea:** Denzel & Paula
 - **Ceremonia & Bautizo:** 17:00h
-  - **Lugar:** Parroquia Nuestra Señora del Pilar (Valdemoro, Madrid)
+  - **Lugar:** Parroquia Nuestra Señora del Pilar (Avda. del Mar Egeo, 3, Valdemoro - El Restón, Madrid)
   - **Ubicación Google Maps:** `https://share.google/7Io54lwIkXP9YSNzD`
 - **Convite & Fiesta:** 20:00h
-  - **Lugar:** Hotel PCM Forum Alcalá (Alcalá de Henares, Madrid)
+  - **Lugar:** Hotel PCM Forum Alcalá (Calle de Bulgaria, 2, 28802 Alcalá de Henares, Madrid)
   - **Ubicación Google Maps:** `https://share.google/uXlopNADPag7lx0Wd`
-- **Alojamiento:** Hotel PCM Forum Alcalá (reserva telefónica indicando la boda de Ángel y Ashley).
+- **Alojamiento:** Hotel PCM Forum Alcalá (4★)
+  - **Teléfono de reserva:** +34 91 291 85 00 (indicar "Boda de Ángel y Ashley")
+  - **Web oficial:** `https://www.pcmforumalcala.com/el-hotel.html`
